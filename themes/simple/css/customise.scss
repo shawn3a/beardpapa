@@ -15,6 +15,10 @@
 @media (min-width:768px) and (max-width: 992px) {
 
   .header {
+    .logo {
+      width: 270px !important;
+      top: 15px !important;
+    }
     .navbar {
       li {
         a {
@@ -40,11 +44,21 @@ body {
   background-repeat: repeat;
 }
 
+.content {
+  margin-top: 30px;
+}
+
+.ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
 .main > .container {
   min-height: 500px;
 }
 
-.header, .footer, .main {
+.container {
   background-color: #ffffff;
 }
 
@@ -58,14 +72,13 @@ body {
 
 .header {
 
-  padding-bottom: 50px;
-
   > .container {
-    border-bottom: 5px solid $secondary-color;
+
   }
 
   .row {
     position: relative;
+    border-bottom: 5px solid $secondary-color;
   }
 
   .logo {
@@ -75,6 +88,7 @@ body {
     z-index: 99;
     left: 20px;
     top: 10px;
+    transition: all 0.5s;
   }
 
   nav.navbar {
@@ -118,6 +132,40 @@ body {
     }
 
 
+  }
+}
+
+.HomePage {
+  .events {
+    border: 5px solid $secondary-color;
+
+    li.event {
+      padding: 5px 10px;
+      height: 30px;
+      list-style: none;
+      overflow: hidden;
+      border-bottom: 5px solid $secondary-color;
+
+      span {
+        line-height: 20px;
+      }
+    }
+  }
+
+  .flexslider {
+    position: relative;
+
+    .flex-direction-nav {
+      display: none;
+    }
+    .flex-control-nav {
+      position: absolute;
+      li {
+        a {
+
+        }
+      }
+    }
   }
 }
 
