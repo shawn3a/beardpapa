@@ -34,7 +34,7 @@ class Page_Controller extends ContentController {
 		// See: http://doc.silverstripe.org/framework/en/reference/requirements
 
         Requirements::css(BOWER_PATH . '/bootstrap/dist/css/bootstrap.min.css');
-        Requirements::css('http://fonts.googleapis.com/css?family=Raleway');
+        Requirements::css('http://fonts.googleapis.com/css?family=PT+Sans');
         Requirements::css(BOWER_PATH . '/fancybox/source/jquery.fancybox.css');
         Requirements::css(BOWER_PATH . '/font-awsome/css/font-awesome.min.css');
         Requirements::css(CSS_DIR . '/customise.css');

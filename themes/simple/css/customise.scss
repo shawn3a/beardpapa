@@ -1,5 +1,129 @@
+@media (max-width:768px) {
+
+  .header {
+    .navbar {
+      li {
+        a {
+          height: auto !important;
+          line-height: 150% !important;
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
+@media (min-width:768px) and (max-width: 992px) {
+
+  .header {
+    .navbar {
+      li {
+        a {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}
+
+$primary-color: #222C68;
+$secondary-color: #FFF100;
+
 html, body {
+  font-family: "Myriad Pro", "PT Sans", "Times New Roman", Times, serif !important;
   width: 100%;
   height: 100%;
   overflow: hidden;
+}
+
+body {
+  background-image: url('/themes/simple/images/background.png');
+  background-repeat: repeat;
+}
+
+.main > .container {
+  min-height: 500px;
+}
+
+.header, .footer, .main {
+  background-color: #ffffff;
+}
+
+.no-padding {
+  padding: 0 !important;
+}
+
+.full-height {
+  height: 100% !important;
+}
+
+.header {
+
+  padding-bottom: 50px;
+
+  > .container {
+    border-bottom: 5px solid $secondary-color;
+  }
+
+  .row {
+    position: relative;
+  }
+
+  .logo {
+    position: absolute;
+    border-bottom: none;
+    width: 290px;
+    z-index: 99;
+    left: 20px;
+    top: 10px;
+  }
+
+  nav.navbar {
+    background-color: #ffffff;
+    border-radius: 0;
+    border: none;
+    margin-bottom: 0;
+
+    .navbar-header {
+      height: 80px;
+    }
+
+    .navbar-collapse {
+
+      &.in {
+        ul.nav {
+          height: auto;
+        }
+      }
+
+      ul.nav {
+        height: 80px;
+
+        li {
+          a {
+            color: $primary-color;
+            display: block;
+            height: 80px;
+            line-height: 80px;
+          }
+
+          &.current {
+            background-color: $secondary-color;
+
+            a {
+              color: #ffffff;
+            }
+          }
+        }
+      }
+    }
+
+
+  }
+}
+
+
+.footer {
+  .created {
+    line-height: 40px;
+  }
 }
