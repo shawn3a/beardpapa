@@ -32,11 +32,17 @@
 $primary-color: #222C68;
 $secondary-color: #FFF100;
 
-html, body {
-  font-family: "Myriad Pro", "PT Sans", "Times New Roman", Times, serif !important;
+html {
   width: 100%;
   height: 100%;
   overflow: hidden;
+}
+
+body {
+  font-family: "Myriad Pro", "PT Sans", "Times New Roman", Times, serif !important;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
 }
 
 body {
@@ -136,33 +142,108 @@ body {
 }
 
 .HomePage {
+
+  .top {
+    padding: 0 0 20px 0;
+    border-bottom: 5px solid $secondary-color;
+  }
   .events {
     border: 5px solid $secondary-color;
 
-    li.event {
+    li {
       padding: 5px 10px;
-      height: 30px;
+      height: 40px;
       list-style: none;
       overflow: hidden;
       border-bottom: 5px solid $secondary-color;
 
-      span {
-        line-height: 20px;
+      .event-link {
+        width: 100%;
+        height: 100%;
+        color: #333;
+        text-decoration: none;
+        cursor: pointer;
       }
+
+      span {
+        line-height: 30px;
+      }
+    }
+
+    li.title {
+      color: $primary-color;
+      background-color: $secondary-color;
+      font-size: 27px;
+      text-align: center;
+      font-family: "Times New Roman", Times, serif;
     }
   }
 
   .flexslider {
     position: relative;
+    margin-bottom: 0;
+    border: none;
 
     .flex-direction-nav {
       display: none;
     }
     .flex-control-nav {
       position: absolute;
+      bottom: 10px;
+      text-align: right;
+
       li {
         a {
+          border-radius: 2px;
+          width: 18px;
+          height: 18px;
+          line-height: 22px;
+          background-color: #ffffff;
+          color: #8B5E3C;
+          border: none;
+          text-align: center;
+          text-indent: 0;
+          text-decoration: none;
 
+          &.flex-active {
+            background-color: #8B5E3C;
+            color: #ffffff;
+          }
+        }
+      }
+    }
+  }
+
+  .shops {
+    color: $primary-color;
+
+    .title {
+      font-family: "Times New Roman", Times, serif;
+      font-weight: bold;
+      border-bottom: 3px solid $secondary-color;
+      margin-bottom: 30px;
+    }
+
+    .shop {
+      margin-bottom: 20px;
+
+      .logo {
+        margin-bottom: 20px;
+      }
+
+      .info {
+        li.info-item {
+          font-size: 16px;
+          margin-bottom: 15px;
+          list-style: none;
+        }
+      }
+
+      .google-map {
+        iframe {
+          border: none;
+          width: 100%;
+          height: 300px;
         }
       }
     }

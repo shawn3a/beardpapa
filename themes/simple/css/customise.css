@@ -9,11 +9,16 @@
     top: 15px !important; }
   .header .navbar li a {
     font-size: 12px; } }
-html, body {
-  font-family: "Myriad Pro", "PT Sans", "Times New Roman", Times, serif !important;
+html {
   width: 100%;
   height: 100%;
   overflow: hidden; }
+
+body {
+  font-family: "Myriad Pro", "PT Sans", "Times New Roman", Times, serif !important;
+  width: 100%;
+  height: 100%;
+  overflow: auto; }
 
 body {
   background-image: url("/themes/simple/images/background.png");
@@ -71,22 +76,74 @@ body {
       .header nav.navbar .navbar-collapse ul.nav li.current a {
         color: #ffffff; }
 
+.HomePage .top {
+  padding: 0 0 20px 0;
+  border-bottom: 5px solid #FFF100; }
 .HomePage .events {
   border: 5px solid #FFF100; }
-  .HomePage .events li.event {
+  .HomePage .events li {
     padding: 5px 10px;
-    height: 30px;
+    height: 40px;
     list-style: none;
     overflow: hidden;
     border-bottom: 5px solid #FFF100; }
-    .HomePage .events li.event span {
-      line-height: 20px; }
+    .HomePage .events li .event-link {
+      width: 100%;
+      height: 100%;
+      color: #333;
+      text-decoration: none;
+      cursor: pointer; }
+    .HomePage .events li span {
+      line-height: 30px; }
+  .HomePage .events li.title {
+    color: #222C68;
+    background-color: #FFF100;
+    font-size: 27px;
+    text-align: center;
+    font-family: "Times New Roman", Times, serif; }
 .HomePage .flexslider {
-  position: relative; }
+  position: relative;
+  margin-bottom: 0;
+  border: none; }
   .HomePage .flexslider .flex-direction-nav {
     display: none; }
   .HomePage .flexslider .flex-control-nav {
-    position: absolute; }
+    position: absolute;
+    bottom: 10px;
+    text-align: right; }
+    .HomePage .flexslider .flex-control-nav li a {
+      border-radius: 2px;
+      width: 18px;
+      height: 18px;
+      line-height: 22px;
+      background-color: #ffffff;
+      color: #8B5E3C;
+      border: none;
+      text-align: center;
+      text-indent: 0;
+      text-decoration: none; }
+      .HomePage .flexslider .flex-control-nav li a.flex-active {
+        background-color: #8B5E3C;
+        color: #ffffff; }
+.HomePage .shops {
+  color: #222C68; }
+  .HomePage .shops .title {
+    font-family: "Times New Roman", Times, serif;
+    font-weight: bold;
+    border-bottom: 3px solid #FFF100;
+    margin-bottom: 30px; }
+  .HomePage .shops .shop {
+    margin-bottom: 20px; }
+    .HomePage .shops .shop .logo {
+      margin-bottom: 20px; }
+    .HomePage .shops .shop .info li.info-item {
+      font-size: 16px;
+      margin-bottom: 15px;
+      list-style: none; }
+    .HomePage .shops .shop .google-map iframe {
+      border: none;
+      width: 100%;
+      height: 300px; }
 
 .footer .created {
   line-height: 40px; }

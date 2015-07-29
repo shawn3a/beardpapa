@@ -30,6 +30,12 @@ class HomePage extends Page {
         return $eventsAll;
     }
 
+    public function getShops() {
+        $shops = Shop::get();
+
+        return $shops;
+    }
+
 }
 
 class HomePage_Controller extends Page_Controller {

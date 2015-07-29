@@ -13,12 +13,19 @@ class Shop extends DataObject {
         'Phone' => 'Varchar(50)',
         'Email' => 'Varchar(50)',
         'Website' => 'Varchar(200)',
-        'GoogleMap' => 'Text'
+        'GoogleMap' => 'HTMLText'
     );
 
     public function getCMSFields() {
         $fields = parent::getCMSFields();
 
+        $fields->replaceField('GoogleMap',
+            TextField::create('GoogleMap', 'Google Map')
+        );
         return $fields;
     }
+
+    private static $summary_fields = array(
+        'Address' => 'Address'
+    );
 }
