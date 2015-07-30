@@ -8,6 +8,18 @@
  */
 class SpecialtyPage extends Page {
 
+    private static $db = array(
+        'Slogan' => 'Text'
+    );
+
+    public function getCMSFields() {
+        $fields = parent::getCMSFields();
+
+        $fields->addFieldToTab('Root.Main', new TextField('Slogan', 'Slogan'), 'Content');
+
+        return $fields;
+    }
+
 }
 
 class SpecialtyPage_Controller extends Page_Controller {

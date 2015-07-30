@@ -9,6 +9,7 @@
 class SiteImage extends Image {
 
     private static $has_one = array(
-        'Shop' => 'Shop'
+        'Shop' => 'Shop',
+        'Chapter' => 'Chapter'
     );
 }
