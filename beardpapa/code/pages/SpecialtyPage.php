@@ -12,12 +12,31 @@ class SpecialtyPage extends Page {
         'Slogan' => 'Text'
     );
 
+    private static $has_one = array(
+        'BannerImage' => 'SiteImage'
+    );
+
     public function getCMSFields() {
         $fields = parent::getCMSFields();
 
-        $fields->addFieldToTab('Root.Main', new TextField('Slogan', 'Slogan'), 'Content');
+        $fields->addFieldsToTab('Root.Main', array(
+                new TextField('Slogan', 'Slogan'),
+                UploadField::create('BannerImage', 'Banner Image', $this->BannerImage())
+                    ->setAllowedExtensions(array('jpg', 'jpeg', 'gif', 'png'))
+            )
+        , 'Content');
 
         return $fields;
+    }
+
+    /**
+     * @return string
+     * Get all chapters
+     */
+    public function getChapters() {
+        $chapters = Chapter::get()->sort('Number');
+
+        return $chapters;
     }
 
 }

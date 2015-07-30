@@ -2,20 +2,62 @@
   .header .navbar li a {
     height: auto !important;
     line-height: 150% !important;
-    font-size: 16px; } }
+    font-size: 16px; }
+
+  .banner .title h1 {
+    font-size: 22px !important; }
+
+  .chapter .description p, .banner .description p {
+    font-size: 16px !important; } }
 @media (min-width: 768px) and (max-width: 992px) {
   .header .logo {
     width: 270px !important;
     top: 15px !important; }
   .header .navbar li a {
     font-size: 12px; } }
+@media (min-width: 992px) {
+  .header .logo {
+    width: 270px !important;
+    top: 15px !important; }
+  .header .navbar li a {
+    font-size: 12px; }
+
+  .chapter .description p, .banner .description p {
+    font-size: 16px !important;
+    line-height: 20px !important; }
+
+  .chapter:nth-child(2) .banner-container {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    right: 15px; }
+  .chapter:nth-child(3) .banner-container {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    right: 50%; }
+  .chapter:nth-child(4) .banner-container {
+    position: absolute;
+    top: 15px;
+    left: 20%;
+    right: 20%; }
+  .chapter:nth-child(5) .banner-container {
+    position: absolute;
+    top: 15px;
+    left: 30%;
+    right: 15px; }
+  .chapter:nth-child(6) .banner-container {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    right: 15px; } }
 html {
   width: 100%;
   height: 100%;
   overflow: hidden; }
 
 body {
-  font-family: "Myriad Pro", "PT Sans", "Times New Roman", Times, serif !important;
+  font-family: "Myriad", "PT Sans", "Times New Roman", Times, serif !important;
   width: 100%;
   height: 100%;
   overflow: auto; }
@@ -25,7 +67,8 @@ body {
   background-repeat: repeat; }
 
 .content {
-  margin-top: 30px; }
+  margin-top: 30px;
+  margin-bottom: 30px; }
 
 .ellipsis {
   overflow: hidden;
@@ -145,6 +188,51 @@ body {
       width: 100%;
       height: 300px; }
 
+.SpecialtyPage section {
+  padding-bottom: 20px;
+  border-bottom: 3px dotted #C3996B;
+  padding-left: 0;
+  padding-right: 0; }
+.SpecialtyPage .banner-container {
+  background-color: rgba(50, 50, 50, 0.4);
+  padding: 15px;
+  float: left; }
+.SpecialtyPage .banner {
+  padding: 30px;
+  min-height: 400px;
+  color: #ffffff;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative; }
+  .SpecialtyPage .banner .title {
+    font-family: "Times New Roman", Times, serif;
+    font-style: italic;
+    border-bottom: 1px solid #ffffff;
+    padding: 10px 0; }
+  .SpecialtyPage .banner .description {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 100; }
+.SpecialtyPage .chapter {
+  margin-top: 20px; }
+  .SpecialtyPage .chapter:nth-child(odd) .title {
+    text-align: left; }
+  .SpecialtyPage .chapter:nth-child(even) .title {
+    text-align: right; }
+  .SpecialtyPage .chapter .title {
+    font-family: "Times New Roman", Times, serif;
+    color: #222C68; }
+    .SpecialtyPage .chapter .title span {
+      font-size: 20px; }
+  .SpecialtyPage .chapter .summary {
+    font-family: "Times New Roman", Times, serif;
+    font-style: italic;
+    border-bottom: 1px solid #ffffff;
+    padding: 10px 0; }
+
+.footer .container {
+  border-top: 5px solid #FFF100; }
 .footer .created {
   line-height: 40px; }
 

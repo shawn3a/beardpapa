@@ -11,7 +11,25 @@
       }
     }
   }
+
+  .banner {
+    .title {
+      h1 {
+        font-size: 22px !important;
+      }
+    }
+  }
+
+  .chapter, .banner {
+    .description {
+      p {
+        font-size: 16px !important;
+      }
+    }
+  }
+
 }
+
 @media (min-width:768px) and (max-width: 992px) {
 
   .header {
@@ -29,6 +47,79 @@
   }
 }
 
+@media (min-width:992px) {
+
+  .header {
+    .logo {
+      width: 270px !important;
+      top: 15px !important;
+    }
+    .navbar {
+      li {
+        a {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+
+  .chapter, .banner {
+    .description {
+      p {
+        font-size: 16px !important;
+        line-height: 20px !important;
+      }
+    }
+  }
+
+  .chapter {
+    &:nth-child(2) {
+      .banner-container {
+        position: absolute;
+        bottom: 15px;
+        left: 15px;
+        right: 15px;
+      }
+    }
+
+    &:nth-child(3) {
+      .banner-container {
+        position: absolute;
+        top: 15px;
+        left: 15px;
+        right: 50%;
+      }
+    }
+
+    &:nth-child(4) {
+      .banner-container {
+        position: absolute;
+        top: 15px;
+        left: 20%;
+        right: 20%;
+      }
+    }
+
+    &:nth-child(5) {
+      .banner-container {
+        position: absolute;
+        top: 15px;
+        left: 30%;
+        right: 15px;
+      }
+    }
+
+    &:nth-child(6) {
+      .banner-container {
+        position: absolute;
+        bottom: 15px;
+        left: 15px;
+        right: 15px;
+      }
+    }
+  }
+}
+
 $primary-color: #222C68;
 $secondary-color: #FFF100;
 
@@ -39,7 +130,7 @@ html {
 }
 
 body {
-  font-family: "Myriad Pro", "PT Sans", "Times New Roman", Times, serif !important;
+  font-family: "Myriad", "PT Sans", "Times New Roman", Times, serif !important;
   width: 100%;
   height: 100%;
   overflow: auto;
@@ -52,6 +143,7 @@ body {
 
 .content {
   margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .ellipsis {
@@ -250,8 +342,86 @@ body {
   }
 }
 
+.SpecialtyPage {
+
+  section {
+    padding-bottom: 20px;
+    border-bottom: 3px dotted #C3996B;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .banner-container {
+    background-color: rgba(50, 50, 50, 0.4);
+    padding: 15px;
+    float: left;
+  }
+
+  .banner {
+    padding: 30px;
+    min-height: 400px;
+    color: #ffffff;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+    .title {
+      font-family: "Times New Roman", Times, serif;
+      font-style: italic;
+      border-bottom: 1px solid #ffffff;
+      padding: 10px 0;
+    }
+
+    .description {
+      margin-top: 20px;
+      font-size: 18px;
+      font-weight: 100;
+    }
+  }
+
+  .chapter {
+    margin-top: 20px;
+
+    &:nth-child(odd) {
+      .title {
+        text-align: left;
+      }
+    }
+
+    &:nth-child(even) {
+      .title {
+        text-align: right;
+      }
+    }
+
+
+    .title {
+      font-family: "Times New Roman", Times, serif;
+      color: $primary-color;
+
+      span {
+        font-size: 20px;
+      }
+    }
+
+    .summary {
+      font-family: "Times New Roman", Times, serif;
+      font-style: italic;
+      border-bottom: 1px solid #ffffff;
+      padding: 10px 0;
+    }
+  }
+
+}
+
 
 .footer {
+
+  .container {
+    border-top: 5px solid $secondary-color;
+  }
+
   .created {
     line-height: 40px;
   }
