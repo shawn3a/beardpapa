@@ -507,6 +507,67 @@ body {
   }
 }
 
+.AboutPage {
+  section {
+    margin-bottom: 15px;
+
+    &:nth-of-type(odd) {
+
+      .title {
+        text-align: left;
+      }
+    }
+
+    &:nth-of-type(even) {
+
+      .title {
+        text-align: right;
+      }
+    }
+
+    .title {
+      font-family: "Times New Roman", Times, serif;
+      color: $primary-color;
+      border-bottom: 3px solid $secondary-color;
+      margin-bottom: 15px;
+
+      h1 {
+        position: relative;
+        top: 15px;
+      }
+    }
+
+    .summary {
+      font-family: "Times New Roman", Times, serif;
+      color: $primary-color;
+      font-style: italic;
+      margin-bottom: 15px;
+    }
+
+    .images {
+      margin-bottom: 15px;
+    }
+
+    .detail {
+      color: #818284;
+      font-size: 1.1em;
+    }
+  }
+
+  &.policy {
+
+  }
+
+  &.recipe {
+
+  }
+
+  &.reputation {
+
+  }
+
+}
+
 
 .footer {
 

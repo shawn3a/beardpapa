@@ -3,13 +3,13 @@
 /**
  * Created by PhpStorm.
  * User: xlin
- * Date: 30/07/15
- * Time: 5:29 PM
+ * Date: 1/08/15
+ * Time: 1:27 PM
  */
-class MoreImage extends Image {
+class PolicyImage extends Image {
 
     private static $has_one = array(
-        'Puff' => 'Puff',
         'AboutPage' => 'AboutPage'
     );
+
 }

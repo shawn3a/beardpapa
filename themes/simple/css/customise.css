@@ -288,6 +288,31 @@ body {
       background-size: contain;
       background-repeat: no-repeat; }
 
+.AboutPage section {
+  margin-bottom: 15px; }
+  .AboutPage section:nth-of-type(odd) .title {
+    text-align: left; }
+  .AboutPage section:nth-of-type(even) .title {
+    text-align: right; }
+  .AboutPage section .title {
+    font-family: "Times New Roman", Times, serif;
+    color: #222C68;
+    border-bottom: 3px solid #FFF100;
+    margin-bottom: 15px; }
+    .AboutPage section .title h1 {
+      position: relative;
+      top: 15px; }
+  .AboutPage section .summary {
+    font-family: "Times New Roman", Times, serif;
+    color: #222C68;
+    font-style: italic;
+    margin-bottom: 15px; }
+  .AboutPage section .images {
+    margin-bottom: 15px; }
+  .AboutPage section .detail {
+    color: #818284;
+    font-size: 1.1em; }
+
 .footer .container {
   border-top: 5px solid #FFF100; }
 .footer .created {
