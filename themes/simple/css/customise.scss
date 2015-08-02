@@ -170,6 +170,14 @@ body {
   min-height: 500px;
 }
 
+.good {
+  color: green;
+}
+
+.bad {
+  color: red;
+}
+
 .container {
   background-color: #ffffff;
 }
@@ -554,18 +562,80 @@ body {
     }
   }
 
-  &.policy {
+}
 
+.FranchisePage, .ContactPage {
+  .title {
+    font-family: "Times New Roman", Times, serif;
+    color: $primary-color;
+    border-bottom: 3px solid $secondary-color;
+    margin-bottom: 15px;
+
+    h1 {
+      margin-top: 0;
+      position: relative;
+      top: 15px;
+    }
   }
 
-  &.recipe {
-
+  .instruction {
+    border-bottom: 3px solid $secondary-color;
   }
 
-  &.reputation {
+  .form-container {
+    h3 {
+      font-family: "Times New Roman", Times, serif;
+      color: $primary-color;
+      font-style: italic;
+    }
 
+    h5 {
+      margin-bottom: 15px;
+    }
+
+    .field {
+      margin-bottom: 10px;
+
+      .textarea {
+        margin-bottom: 20px;
+        resize: none;
+      }
+    }
+
+
+    .info {
+      overflow: auto;
+      margin-bottom: 15px;
+
+      .field {
+        overflow: auto;
+
+        label {
+          width: 50%;
+          float: left;
+        }
+
+        .middleColumn {
+          width: 50%;
+          float: left;
+
+          input {
+            width: 100%;
+          }
+        }
+      }
+
+    }
+
+    .questions {
+      margin-bottom: 15px;
+      overflow: auto;
+    }
+
+    .Actions {
+      text-align: center;
+    }
   }
-
 }
 
 
