@@ -21,6 +21,12 @@
   }
 
   .chapter, .banner {
+
+    .banner-container {
+      position: static !important;
+      float: none !important;
+    }
+
     .description {
       p {
         font-size: 16px !important;
@@ -597,8 +603,10 @@ body {
       margin-bottom: 10px;
 
       .textarea {
+        width: 100%;
         margin-bottom: 20px;
         resize: none;
+        border: 1px solid #231F20;
       }
     }
 
@@ -621,7 +629,9 @@ body {
 
           input {
             width: 100%;
+            border: 1px solid #231F20;
           }
+
         }
       }
 
@@ -660,6 +670,7 @@ body {
   .field {
     overflow: auto;
     margin-bottom: 15px;
+    font-size: 16px;
 
     label {
       text-align: right;
@@ -674,10 +685,12 @@ body {
 
       input {
         width: 100%;
+        border: 1px solid #231F20;
       }
 
       .textarea {
         resize: none;
+        border: 1px solid #231F20;
       }
     }
   }
@@ -687,6 +700,52 @@ body {
     padding: 15px;
   }
 
+  .social {
+    border-top: 3px solid $secondary-color;
+    overflow: auto;
+
+    h4 {
+      font-family: "Times New Roman", Times, serif;
+      font-style: italic;
+      color: $primary-color;
+      margin-bottom: 15px;
+    }
+
+    ul {
+      li {
+        list-style: none;
+        text-align: center;
+        a {
+          display: block;
+          width: 70px;
+          height: 70px;
+          text-align: center;
+          margin: auto;
+          border-radius: 10px;
+          margin-bottom: 15px;
+
+          &.facebook {
+            background-color: #244585;
+          }
+
+          &.twitter {
+            background-color: #58A1D8;
+          }
+
+          &.wechat {
+            background-color: #3F8C40;
+          }
+
+          i.fa {
+            font-size: 50px;
+            line-height: 70px;
+            color: #ffffff;
+          }
+        }
+      }
+    }
+  }
+
 }
 
 
@@ -694,9 +753,14 @@ body {
 
   .container {
     border-top: 5px solid $secondary-color;
+    padding: 15px;
   }
 
   .created {
-    line-height: 40px;
+  }
+
+  .franchise-link {
+    font-style: italic;
+    color: #A8A9AD;
   }
 }

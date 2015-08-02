@@ -50,7 +50,7 @@ class ContactPage_Controller extends Page_Controller {
 
         $form = new Form($this, __FUNCTION__, $fields, $actions, $requires);
 
-        $form->addExtraClass('col-sm-8 col-sm-offset-2 col-xs-12');
+        $form->addExtraClass('col-sm-10 col-sm-offset-1 col-xs-12');
 
         if ($formData = Session::get('ContactData')) {
             $form->loadDataFrom($formData);
