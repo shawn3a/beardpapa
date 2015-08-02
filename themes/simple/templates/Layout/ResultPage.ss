@@ -1,7 +1,7 @@
 <div class="row">
     <div class="col-sm-12 content">
         <div class="col-sm-12 title">
-            <h1>Franchising</h1>
+            <h1>$Title</h1>
         </div>
         <div class="col-sm-12 text-center">
             <h2 class="{$Type}">$Message</h2>

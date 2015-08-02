@@ -9,18 +9,7 @@
 class FranchisePage extends Page {
 
     private static $db = array(
-        'SendEmail' => 'Varchar(50)',
-        'FirstName' => 'Varchar(50)',
-        'LastName' => 'Varchar(50)',
-        'Email' => 'Varchar(50)',
-        'Contact' => 'Varchar(50)',
-        'CallingTime' => 'Varchar(50)',
-        'LiquidCapital' => 'Varchar(50)',
-        'TimeStart' => 'Date',
-        'Area' => 'Text',
-        'Experience' => 'Text',
-        'Hear' => 'Text',
-        'Message' => 'Text'
+        'SendEmail' => 'Varchar(50)'
     );
 
     public function getCMSFields() {
@@ -63,7 +52,7 @@ class FranchisePage_Controller extends Page_Controller {
         );
 
         $actions = FieldList::create(
-            FormAction::create('Send', 'Send')
+            FormAction::create('Send', 'Send')->addExtraClass('btn btn-primary')
         );
 
         $requires = RequiredFields::create(
@@ -91,6 +80,7 @@ class FranchisePage_Controller extends Page_Controller {
 
     public function Send($data, Form $form) {
         Session::set('FranchiseData', $data);
+
         $from = $data['Email'];
         $to = $this->SendEmail;
         $subject = 'Franchise Information';
@@ -114,12 +104,15 @@ class FranchisePage_Controller extends Page_Controller {
         $flag = $email->sendPlain();
 
         if($flag) {
-            $result['Message'] = 'You have submission is successful, thank you.';
+            $result['Message'] = 'You submission is successful, thank you.';
             $result['Type'] = 'good';
+            Session::clear('FranchiseData');
         } else {
             $result['Message'] = 'Sorry your submission is unsuccessful, please try again or contact us.';
             $result['Type'] = 'bad';
         }
+
+        $result['Title'] = 'Franchising';
 
         $result['BackURL'] = '/franchise';
 

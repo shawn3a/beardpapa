@@ -319,46 +319,76 @@ body {
     color: #818284;
     font-size: 1.1em; }
 
-.FranchisePage .title, .ContactPage .title {
+.FranchisePage .title {
   font-family: "Times New Roman", Times, serif;
   color: #222C68;
   border-bottom: 3px solid #FFF100;
   margin-bottom: 15px; }
-  .FranchisePage .title h1, .ContactPage .title h1 {
+  .FranchisePage .title h1 {
     margin-top: 0;
     position: relative;
     top: 15px; }
-.FranchisePage .instruction, .ContactPage .instruction {
+.FranchisePage .instruction {
   border-bottom: 3px solid #FFF100; }
-.FranchisePage .form-container h3, .ContactPage .form-container h3 {
+.FranchisePage .form-container h3 {
   font-family: "Times New Roman", Times, serif;
   color: #222C68;
   font-style: italic; }
-.FranchisePage .form-container h5, .ContactPage .form-container h5 {
+.FranchisePage .form-container h5 {
   margin-bottom: 15px; }
-.FranchisePage .form-container .field, .ContactPage .form-container .field {
+.FranchisePage .form-container .field {
   margin-bottom: 10px; }
-  .FranchisePage .form-container .field .textarea, .ContactPage .form-container .field .textarea {
+  .FranchisePage .form-container .field .textarea {
     margin-bottom: 20px;
     resize: none; }
-.FranchisePage .form-container .info, .ContactPage .form-container .info {
+.FranchisePage .form-container .info {
   overflow: auto;
   margin-bottom: 15px; }
-  .FranchisePage .form-container .info .field, .ContactPage .form-container .info .field {
+  .FranchisePage .form-container .info .field {
     overflow: auto; }
-    .FranchisePage .form-container .info .field label, .ContactPage .form-container .info .field label {
+    .FranchisePage .form-container .info .field label {
       width: 50%;
       float: left; }
-    .FranchisePage .form-container .info .field .middleColumn, .ContactPage .form-container .info .field .middleColumn {
+    .FranchisePage .form-container .info .field .middleColumn {
       width: 50%;
       float: left; }
-      .FranchisePage .form-container .info .field .middleColumn input, .ContactPage .form-container .info .field .middleColumn input {
+      .FranchisePage .form-container .info .field .middleColumn input {
         width: 100%; }
-.FranchisePage .form-container .questions, .ContactPage .form-container .questions {
+.FranchisePage .form-container .questions {
   margin-bottom: 15px;
   overflow: auto; }
-.FranchisePage .form-container .Actions, .ContactPage .form-container .Actions {
+.FranchisePage .form-container .Actions {
   text-align: center; }
+
+.ContactPage .title {
+  font-family: "Times New Roman", Times, serif;
+  color: #222C68;
+  border-bottom: 3px solid #FFF100;
+  margin-bottom: 15px; }
+  .ContactPage .title h1 {
+    margin-top: 0;
+    position: relative;
+    top: 15px; }
+.ContactPage .instruction {
+  margin-bottom: 15px; }
+.ContactPage .field {
+  overflow: auto;
+  margin-bottom: 15px; }
+  .ContactPage .field label {
+    text-align: right;
+    padding-right: 10px;
+    width: 20%;
+    float: left; }
+  .ContactPage .field .middleColumn {
+    width: 80%;
+    float: left; }
+    .ContactPage .field .middleColumn input {
+      width: 100%; }
+    .ContactPage .field .middleColumn .textarea {
+      resize: none; }
+.ContactPage .Actions {
+  text-align: right;
+  padding: 15px; }
 
 .footer .container {
   border-top: 5px solid #FFF100; }

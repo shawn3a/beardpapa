@@ -7,10 +7,7 @@
             $Content
         </div>
         <div class="col-sm-12 form-container">
-            <h3>Franchise Opportunity Request Form</h3>
-            <h5>Take the next step now! For consideration, please submit the information below and a representative from our franchising department will contact you.</h5>
-
-            <div class="col-sm-12 franchise-form">
+            <div class="col-sm-12 contact-form">
                 $Form
             </div>
         </div>
