@@ -3,6 +3,7 @@
   "dependencies": {
     "bootstrap": "~3.3.5",
     "flexslider": "~2.5.0",
-    "fancybox": "~2.1.5"
+    "fancybox": "~2.1.5",
+    "font-awesome": "~4.4.0"
   }
 }
